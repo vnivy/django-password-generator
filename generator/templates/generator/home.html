@@ -1,0 +1,66 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <title>nivy</title>
+</head>
+
+
+<div class="p-6 mb-9 bg-info text-white">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <div class="container text-centered" >
+           <h1>password generator</h1>
+
+ <form action="{% url 'password' %}">
+   <select name="length">
+     <option value="6">6</option>
+     <option value="7">7</option>
+     <option value="8">8</option>
+     <option value="9">9</option>
+     <option value="10">10</option>
+     <option value="11">11</option>
+     <option value="12" selected="selected">12</option>
+     <option value="13">13</option>
+     <option value="14">14</option>
+     <option value="15">15</option>
+   </select>length
+
+ <br><br>
+ <input type="checkbox" name="uppercase"> Uppercase
+ <br><br>
+ <input type="checkbox" name="numbers"> Numbers
+ <br><br>
+ <input type="checkbox" name="special"> special characters
+ <br><br>
+
+
+   <input type="submit" value="generate password" class="btn btn-primary"><br>
+
+   <br>
+   To prevent your passwords from being hacked by social engineering, brute force or dictionary attack method, and keep your online accounts safe, you should notice that:<br>
+   1. Do not use the same password, security question and answer for multiple important accounts.<br>
+   2. Use a password that has at least 16 characters, use at least one number, one uppercase letter, one lowercase letter and one special symbol.<br>
+   3. Do not use the names of your families, friends or pets in your passwords.<br>
+   4. Do not use postcodes, house numbers, phone numbers, birthdates, ID card numbers, social security numbers, and so on in your passwords.<br>
+   5.Do not log in to important accounts on the computers of others, or when connected to a public Wi-Fi hotspot, Tor, free VPN or web proxy.<br>
+   6.Lock your computer and mobile phone when you leave them.<br>
+   7.Access important websites in private or incognito mode, or use one Web browser to access important websites,  use another one to access other sites. Or access unimportant websites and install new software inside a virtual machine created with VMware, VirtualBox or Parallels.<br>
+   8.Use at least 3 different email addresses, use the first one to receive emails from important sites and Apps, such as Paypal and Amazon, use the second one to receive emails from unimportant sites and Apps, use the third one( from a different email provider, such as Outlook and GMail ) to receive your password-reset email when the first one( e.g. Yahoo Mail ) is hacked.<br>
+   9.Use at least 2 differnet phone numbers, do NOT tell others the phone number which you use to receive text messages of the verification codes.<br>
+  10.Do not click the link in an email or SMS message, do not reset your passwords by clicking them, except that you know these messages are not fake. Do not tell your passwords to anybody in the email.<br>
+
+   </form>
+ </div>
+</div><br>
+<center>Rights Reserved.
+
+We do not store any passwords.</center>
